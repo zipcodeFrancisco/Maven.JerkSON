@@ -1,12 +1,12 @@
-## WELCOME TO TARIQ'S PainfullAfternoon (Hurtlocker.JerkSON)
+# WELCOME TO TARIQ'S PainfullAfternoon (Hurtlocker.JerkSON)
 * **Objective:** To implement a `GroceryReporter` capable of parsing `JerkSON` and formatting to a string
 * **Purpose:** To gain familiarity with [regex](https://en.wikipedia.org/wiki/Regular_expression) and [payload](https://en.wikipedia.org/wiki/Payload_(computing)) parsing
 
-# You will need all of these today!
+## You will need all of these today!
 In this project you will find a file in the `resource` directory named `RawInput.JerkSON`.
 It was supposed to be a grocery list formated in `JSON`. However, Tariq, your fearless yet petty leader decided to come reformat it in his own Object Notation. `JerkSON`... you are welcome.
 
-## JSON Format
+### JSON Format
 * In `JSON`,
   * _keys_ are encapsulated by quotes
   * _values_ are encapsulated by quotes (unless numeric)
@@ -22,7 +22,7 @@ It was supposed to be a grocery list formated in `JSON`. However, Tariq, your fe
 }
 ```
 
-## JerkSON Format
+### JerkSON Format
 * Just like `JSON`, `JerkSON` is a [_key-value-pair-data-store_](https://en.wikipedia.org/wiki/Attribute%E2%80%93value_pair).
 * In `JerkSON`,
   * _keys_ are encapsulated by quotes
@@ -34,7 +34,7 @@ It was supposed to be a grocery list formated in `JSON`. However, Tariq, your fe
 NaMe:egGS;prICE:3.23;typE:foOd;eXPiRAtIOn:1/24/2016##
 ```
 
-## Some tidbits
+### Some tidbits
 All string manipulation should be achieved through regex to detect and match patterns.
 Its not guranteed that every Key will have a Value, and every Value will have a pair. For instance:
 

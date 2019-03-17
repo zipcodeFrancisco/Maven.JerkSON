@@ -1,23 +1,35 @@
-## WELCOME TO THE PainfullAfternoon (Hurtlocker)
+## WELCOME TO TARIQ'S PainfullAfternoon (Hurtlocker.JerkSON)
 
 By this time you should have been introduced to Java Strings, Exceptions, Unit Testing, and Regex.
 
 # You will need all of these today!
+In this project you will find a file in the `resource` directory named `RawInput.JerkSON`.
+It was supposed to be a grocery list formated in `JSON`. However, Tariq, your fearless yet petty leader decided to come reformat it in his own Object Notation. `JerkSON`... you are welcome.
 
-In this project you will find a file in the resource folder called RawData.txt. It was supposed to be a grocery list formated in JSON, but after a huge defeat this weekend in a game called Munchkin, Tariq your fearless yet petty leader decided to come reformat it in his own Object Notation. JerkSON... you are welcome.
+## JSON Format
+* In `JSON`,
+  * _keys_ are encapsulated by quotes
+  * _values_ are encapsulated by quotes (unless numeric)
+  * _key_ and _value_ are seperated by a colon.
+  * _key and value pairs_ are seperated by a comma.
+
+```json
+{
+  "name" : "Joe",
+  "age" : 30
+}
+```
 
 ## JerkSON Format
-
-Just like Json , JerkSON is supposed to be a Key Value Pair data store.
-
-In Json Key and Value are seperated as such (Key:Value) where the colon is the seperator.
-
-In JerkSON Key and Value could be seperated by using a any of the following (:, @, ^, *, %) and there is no guarntee that there isn't another hidden symbol seperator. (There could be another one, or maybe there isn't , you tell me)... lol
-
-In Json Key and Value pairs are seperated by a ',' in JerkSON its '##'
+* Just like `JSON`, `JerkSON` is a [_key-value-pair-data-store_](https://en.wikipedia.org/wiki/Attribute%E2%80%93value_pair).
+* In `JerkSON`,
+  * _keys_ are encapsulated by quotes
+  * _values_ are encapsulated by quotes (unless numeric)
+  * _key_ and _value_ are seperated by any of the following (`:`, `@`, `^`, `*`, `%`)
+  * _key and value pairs_ are seperated by a `##`.
 
 ## Your Task
-Its your job to build a JerkSON data parser, that is able to read in the raw data , and output a string formated list that resembles (outputFormat.txt) 
+Its your job to build a `JerkSON` data parser, that is able to read in the raw data , and output a string formated list that resembles (outputFormat.txt) 
 
 There are some things to look out for.... If you haven't figured it out by now Tariq has many wonderful qualities, spelling isn't one of them, so Words may not be spelled correctly. You need to decipher what Tariq was trying to spell using pattern matching.
 

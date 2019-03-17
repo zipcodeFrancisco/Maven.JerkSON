@@ -15,8 +15,10 @@ It was supposed to be a grocery list formated in `JSON`. However, Tariq, your fe
 
 ```json
 {
-  "name" : "Joe",
-  "age" : 30
+  "name" : "Milk",
+  "price" : 3.25
+  "type" : "food"
+  "expiration" : "01/24/2016" 
 }
 ```
 
@@ -27,6 +29,10 @@ It was supposed to be a grocery list formated in `JSON`. However, Tariq, your fe
   * _values_ are encapsulated by quotes (unless numeric)
   * _key_ and _value_ are seperated by any of the following (`:`, `@`, `^`, `*`, `%`)
   * _key and value pairs_ are seperated by a `##`.
+
+```
+NaMe:egGS;prICE:3.23;typE:foOd;eXPiRAtIOn:1/24/2016##
+```
 
 ## Some tidbits
 All string manipulation should be achieved through regex to detect and match patterns.

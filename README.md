@@ -1,6 +1,6 @@
 ## WELCOME TO TARIQ'S PainfullAfternoon (Hurtlocker.JerkSON)
 * **Objective:** To implement a `GroceryReporter` capable of parsing `JerkSON` and formatting to a string
-* **Purpose:** 
+* **Purpose:** To gain familiarity with [regex](https://en.wikipedia.org/wiki/Regular_expression) and [payload](https://en.wikipedia.org/wiki/Payload_(computing)) parsing
 
 # You will need all of these today!
 In this project you will find a file in the `resource` directory named `RawInput.JerkSON`.

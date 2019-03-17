@@ -16,8 +16,8 @@ It was supposed to be a grocery list formated in `JSON`. However, Tariq, your fe
 ```json
 {
   "name" : "Milk",
-  "price" : 3.25
-  "type" : "food"
+  "price" : 3.25,
+  "type" : "food",
   "expiration" : "01/24/2016" 
 }
 ```

@@ -1,11 +1,9 @@
 package io.zipcoder.itemparser;
 
+import io.zipcoder.ItemParser;
 import io.zipcoder.utils.Item;
 import io.zipcoder.utils.ItemParseException;
-import io.zipcoder.ItemParser;
 import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
 
 public class ParseBrokenSingleItemTest {
     @Test(expected = ItemParseException.class)
@@ -26,10 +24,7 @@ public class ParseBrokenSingleItemTest {
         Item expected = new Item("eggs", 1.25, "food", "1/25/2016");
 
         // when
-        Item actual = itemParser.parseSingleItem(valueToParse);
-
-        // then
-        assertEquals(expected.toString(), actual.toString());
+        itemParser.parseSingleItem(valueToParse); // throws exception
     }
 
 
@@ -41,10 +36,7 @@ public class ParseBrokenSingleItemTest {
         Item expected = new Item("television", 323.5, "electronics", "3/25/2019");
 
         // when
-        Item actual = itemParser.parseSingleItem(valueToParse);
-
-        // then
-        assertEquals(expected.toString(), actual.toString());
+        itemParser.parseSingleItem(valueToParse); // throws exception
     }
 
 
@@ -57,10 +49,7 @@ public class ParseBrokenSingleItemTest {
         Item expected = new Item("television", 323.5, "electronics", "3/25/2019");
 
         // when
-        Item actual = itemParser.parseSingleItem(valueToParse);
-
-        // then
-        assertEquals(expected.toString(), actual.toString());
+        itemParser.parseSingleItem(valueToParse); // throws exception
     }
 
     @Test(expected = ItemParseException.class)
@@ -71,9 +60,6 @@ public class ParseBrokenSingleItemTest {
         Item expected = new Item("television", 323.5, "electronics", "3/25/2019");
 
         // when
-        Item actual = itemParser.parseSingleItem(valueToParse);
-
-        // then
-        assertEquals(expected.toString(), actual.toString());
+        itemParser.parseSingleItem(valueToParse); // throws exception
     }
 }

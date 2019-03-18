@@ -63,7 +63,7 @@ public class ParseBrokenItemListTest {
         ItemParser itemParser = new ItemParser();
         String valueToParse = new StringBuilder()
                 .append("naME:BreaD;price:1.23;type:Food;expiration:1/02/2016##")
-                .append("chew checking checkered cheddar cheeseburgers##")
+                .append("chewy chunky checkered cheddar cheeseburgers##")
                 .append("NAMe:eggs;price:1.24;type:Food;expiration:2/25/2016##")
                 .append("NAMe:BacoN;price:1.25;type:Food;expiration:2/25/2016##")
                 .toString();

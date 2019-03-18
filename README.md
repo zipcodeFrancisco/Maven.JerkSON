@@ -26,7 +26,7 @@ It was supposed to be a grocery list formated in `JSON`. However, Tariq, your fe
 * Just like `JSON`, `JerkSON` is a [_key-value-pair-data-store_](https://en.wikipedia.org/wiki/Attribute%E2%80%93value_pair).
 * In `JerkSON`,
   * _key_ and _value_ are seperated by any of the following (`:`, `@`, `^`, `*`, `%`)
-  * _key and value pairs_ are seperated by a `##`.
+  * _key and value pairs_ are seperated by a `;`.
 
 ```
 NaMe:egGS;prICE@3.23;typE^foOd;eXPiRAtIOn%1/24/2016##

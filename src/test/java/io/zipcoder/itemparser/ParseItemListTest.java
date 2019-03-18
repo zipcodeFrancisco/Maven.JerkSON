@@ -106,7 +106,7 @@ public class ParseItemListTest {
                 .append("naMe@Milk;price@3.23;type@Food;expiration@1/25/2016##")
                 .append("naME*BreaD;price*1.23;type*Food;expiration*1/02/2016##")
                 .append("NAMe%BrEAD;price%1.23;type%Food;expiration%2/25/2016##")
-                .append("NAMe:eggs;price:1.24;type:Food;expiration:2/25/2016##")
+                .append("NAMe*eggs;price@1.24;type^Food;expiration%2/25/2016##")
                 .append("NAMe:BacoN;price:1.25;type:Food;expiration:2/25/2016##")
                 .toString();
         List<Item> expectedList = Arrays.asList(

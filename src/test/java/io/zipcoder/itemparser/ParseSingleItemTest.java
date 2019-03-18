@@ -51,4 +51,50 @@ public class ParseSingleItemTest {
         assertEquals(expected, actual);
     }
 
+
+    @Test
+    public void test4() throws ItemParseException {
+        // given
+        ItemParser itemParser = new ItemParser();
+        String valueToParse = "naMe@teleVision;price@333.5;type@electRoniCs;expiration@3/25/2019##";
+        Item expected = new Item("television", 333.5, "electronics", "3/25/2019");
+
+        // when
+        Item actual = itemParser.parseSingleItem(valueToParse);
+
+        // then
+        assertEquals(expected, actual);
+    }
+
+
+    @Test
+    public void test5() throws ItemParseException {
+        // given
+        ItemParser itemParser = new ItemParser();
+        String valueToParse = "naMe^teleVision;price^423.5;type^electRoniCs;expiration^3/25/2019##";
+        Item expected = new Item("television", 423.5, "electronics", "3/25/2019");
+
+        // when
+        Item actual = itemParser.parseSingleItem(valueToParse);
+
+        // then
+        assertEquals(expected, actual);
+    }
+
+
+
+    @Test
+    public void test6() throws ItemParseException {
+        // given
+        ItemParser itemParser = new ItemParser();
+        String valueToParse = "naMe^teleVision;price@325.5;type%electRoniCs;expiration%3/25/2019##";
+        Item expected = new Item("television", 325.5, "electronics", "3/25/2019");
+
+        // when
+        Item actual = itemParser.parseSingleItem(valueToParse);
+
+        // then
+        assertEquals(expected, actual);
+    }
+
 }

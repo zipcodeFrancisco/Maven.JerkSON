@@ -25,13 +25,11 @@ It was supposed to be a grocery list formated in `JSON`. However, Tariq, your fe
 ### JerkSON Format
 * Just like `JSON`, `JerkSON` is a [_key-value-pair-data-store_](https://en.wikipedia.org/wiki/Attribute%E2%80%93value_pair).
 * In `JerkSON`,
-  * _keys_ are encapsulated by quotes
-  * _values_ are encapsulated by quotes (unless numeric)
   * _key_ and _value_ are seperated by any of the following (`:`, `@`, `^`, `*`, `%`)
   * _key and value pairs_ are seperated by a `##`.
 
 ```
-NaMe:egGS;prICE:3.23;typE:foOd;eXPiRAtIOn:1/24/2016##
+NaMe:egGS;prICE@3.23;typE^foOd;eXPiRAtIOn%1/24/2016##
 ```
 
 ### Some tidbits

@@ -9,7 +9,7 @@ public class ToStringTest {
     @Test
     public void test1() {
         // given
-        String fileName = "RawInput.jERKson";
+        String fileName = "RawInput.JerkSON";
         String expected = FileReader.readFile("ExpectedOutput.txt");
         GroceryReporter reporter = new GroceryReporter(fileName);
 

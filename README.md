@@ -27,6 +27,7 @@ It was supposed to be a grocery list formated in `JSON`. However, Tariq, your fe
 * In `JerkSON`,
   * _key_ and _value_ are seperated by any of the following (`:`, `@`, `^`, `*`, `%`)
   * _key and value pairs_ are seperated by a `;`.
+  * _objects_ are separated by `##`
 
 ```
 NaMe:egGS;prICE@3.23;typE^foOd;eXPiRAtIOn%1/24/2016##
